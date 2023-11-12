@@ -1,17 +1,13 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
-
-import hello.hellospring.domain.Member;
 import org.springframework.jdbc.datasource.DataSourceUtils;
+
 import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
-import static jdk.internal.net.http.common.Utils.close;
-import static org.springframework.jdbc.datasource.DataSourceUtils.getConnection;
 
 public class JdbcMemberRepository implements MemberRepository {
     private final DataSource dataSource;
